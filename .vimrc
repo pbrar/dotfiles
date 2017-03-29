@@ -1,6 +1,7 @@
 
 "https://github.com/derekwyatt/vim-config/blob/master/vimrc
 "
+set nocompatible
 filetype plugin on
 filetype indent on
 syntax on
@@ -62,3 +63,12 @@ set showmode
  
 set shiftwidth=4
 set softtabstop=4
+
+execute pathogen#infect() 
+
+let g:vimwiki_list = [{'path': '~/my_site/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:vimwiki_folding = 'expr'
+
+let g:instant_markdown_autostart = 0    " disable autostart
+map <leader>md :InstantMarkdownPreview<CR>
