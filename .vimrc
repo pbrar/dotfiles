@@ -69,6 +69,17 @@ execute pathogen#infect()
 let g:vimwiki_list = [{'path': '~/my_site/', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 let g:vimwiki_folding = 'expr'
+let g:vimwiki_table_mappings = 0
 
-let g:instant_markdown_autostart = 0    " disable autostart
-map <leader>md :InstantMarkdownPreview<CR>
+"let g:instant_markdown_autostart = 0    " disable autostart
+"map <leader>md :InstantMarkdownPreview<CR>
+
+nnoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>gV
+onoremap <Tab> <Esc>
+inoremap <Tab> <Esc>`^
+inoremap <Leader><Tab> <Tab>
+
+au VimEnter * map <Tab> <Esc>
+au VimEnter * imap <Tab> <Esc>
+au VimEnter * vmap <Tab> <Esc>
