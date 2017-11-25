@@ -154,8 +154,8 @@ nmap <Leader>wn <Plug>VimwikiNextLink
 " SORT
 "------------------------------
 set lines=40 columns=125
-set guifont=Consolas:h10
-"let g:solarized_termtrans = 1
+"set guifont=Consolas:h10
+let g:solarized_termtrans = 1
 "colorscheme ir_black
 set background=dark
 colorscheme solarized
