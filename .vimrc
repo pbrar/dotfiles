@@ -153,12 +153,12 @@ nmap <Leader>wn <Plug>VimwikiNextLink
 "------------------------------
 " SORT
 "------------------------------
-set lines=40 columns=125
+"set lines=40 columns=125
 "set guifont=Consolas:h10
-let g:solarized_termtrans = 1
+"let g:solarized_termtrans = 1
 "colorscheme ir_black
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 "let g:instant_markdown_autostart = 0    " disable autostart
 "map <leader>md :InstantMarkdownPreview<CR>
